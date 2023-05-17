@@ -3,16 +3,11 @@ What is needed for pagination?
   - Data that you will sort through
   - Number of cards per page
   - buttons to navigate to the next and previous page/set of cards.
-  - Maybe buttons for page numbers as well?
-    - Maybe the max number of page buttons you want to be shown and truncated
-      ex: 7 page buttons needed could look like this below
-        [1] 2 3 ... 18 19 20
+
 
   - MATH NEEDED
-    - need to find the amount of pages/set of cards you will have
-    - current collection of data, setState could help with this
-      - compromised of data that finds the beginning of the current displayed data with both a beginning and end index for slicing
-        - need to find beginning and end index of displayed data 
+    - need to find the amount of pages you will have according to the amount of items you want on screen
+    - need to slice through data by finding the current position and items per page
 */
 
 import { useState } from "react";
