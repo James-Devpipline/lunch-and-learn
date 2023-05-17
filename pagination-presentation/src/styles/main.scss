@@ -1,0 +1,18 @@
+.App {
+  margin: 0;
+
+  .paginate-data {
+    .slides-wrapper {
+      display: flex;
+      flex-direction: row;
+
+      .card-item {
+        width: 10rem;
+
+        img {
+          width: 10rem;
+        }
+      }
+    }
+  }
+}
