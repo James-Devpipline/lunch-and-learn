@@ -6,7 +6,7 @@ What is needed for pagination?
 
 
   - MATH NEEDED
-    - need to find the amount of pages you will have according to the amount of items you want on screen
+    - need to find the amount of pages you will have; according to the amount of items you want on screen
     - need to slice through data by finding the current position and items per page
 */
 
@@ -30,6 +30,7 @@ const usePagination = (data = [], itemsPerPage = 1) => {
 
   const prev = () => {
     setCurrentPosition((current) => Math.max(current - 1, 0));
+    console.log(currentPosition);
   };
 
   const jump = (page) => {

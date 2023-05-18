@@ -6,7 +6,7 @@ import { mockData } from "./mockData";
 export default function PaginateData(props) {
   const [currentPageCards, setCurrentPageCards] = useState([]);
 
-  const paginate = usePagination(mockData, 6);
+  const paginate = usePagination(mockData, 1);
 
   useEffect(() => {
     setCurrentPageCards(paginate.sliceCurrentData());

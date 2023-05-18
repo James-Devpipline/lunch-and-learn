@@ -59,4 +59,7 @@ const usePagination = (data = [], itemsPerPage = 1, numOfPageButtons = 0) => {
   }
  // the total pages - 1 is because currentPosition is zero indexed
   */
+  return { sliceCurrentData, next, prev, jump };
 };
+
+export default usePagination;
